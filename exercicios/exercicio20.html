@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 20 - Mini Projeto Ajax + DOM</title>
+</head>
+<body>
+  <h1>Notícias</h1>
+  <button id="btnCarregarNoticias">Carregar notícias</button>
+  <div id="listaNoticias"></div>
+
+  <script>
+    document.getElementById("btnCarregarNoticias").addEventListener("click", function () {
+      const xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          const xml = xhr.responseXML;
+          const noticias = xml.getElementsByTagName("noticia");
+          const container = document.getElementById("listaNoticias");
+          container.innerHTML = ""; // limpa antes de renderizar
+
+          for (let i = 0; i < noticias.length; i++) {
+            const titulo = noticias[i].getElementsByTagName("titulo")[0].textContent;
+            const resumo = noticias[i].getElementsByTagName("resumo")[0].textContent;
+
+            const bloco = document.createElement("div");
+            bloco.innerHTML = `<h3>${titulo}</h3><p>${resumo}</p>`;
+            container.appendChild(bloco);
+          }
+        }
+      };
+
+      xhr.open("GET", "noticias.xml", true);
+      xhr.send();
+    });
+  </script>
+</body>
+</html>
+
+<!--
+  Assim como no exercício 19, esse projeto precisa rodar via servidor local
+  (não abrindo o HTML diretamente pelo navegador) para o XMLHttpRequest
+  funcionar corretamente.
+-->

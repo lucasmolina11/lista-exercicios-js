@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 16 - Criação Dinâmica</title>
+</head>
+<body>
+  <button id="btnCriar">Adicionar parágrafo</button>
+
+  <script>
+    document.getElementById("btnCriar").addEventListener("click", function () {
+      const paragrafo = document.createElement("p");
+      paragrafo.textContent = "Este parágrafo foi criado dinamicamente!";
+      document.body.appendChild(paragrafo);
+    });
+  </script>
+</body>
+</html>

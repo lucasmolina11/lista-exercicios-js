@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noticias>
+  <noticia>
+    <titulo>JavaScript continua em alta</titulo>
+    <resumo>A linguagem segue como uma das mais usadas no desenvolvimento web.</resumo>
+  </noticia>
+  <noticia>
+    <titulo>Novidades do ES2024</titulo>
+    <resumo>Novos recursos facilitam o trabalho com arrays e objetos.</resumo>
+  </noticia>
+</noticias>

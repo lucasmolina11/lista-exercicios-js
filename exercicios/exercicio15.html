@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 15 - Manipulação do DOM</title>
+</head>
+<body>
+  <div id="msg">Mensagem original</div>
+  <button id="btnAlterar">Alterar mensagem</button>
+
+  <script>
+    const div = document.getElementById("msg");
+    const botao = document.getElementById("btnAlterar");
+
+    botao.addEventListener("click", function () {
+      div.textContent = "Conteúdo alterado via JavaScript!";
+      div.style.color = "white";
+      div.style.backgroundColor = "darkgreen";
+      div.style.padding = "10px";
+    });
+  </script>
+</body>
+</html>

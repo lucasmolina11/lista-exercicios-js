@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 19 - XMLHttpRequest</title>
+</head>
+<body>
+  <button id="btnCarregar">Carregar arquivo</button>
+  <div id="conteudo"></div>
+
+  <script>
+    document.getElementById("btnCarregar").addEventListener("click", function () {
+      const xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.getElementById("conteudo").textContent = xhr.responseText;
+        }
+      };
+
+      xhr.open("GET", "dados.txt", true);
+      xhr.send();
+    });
+  </script>
+</body>
+</html>
+
+<!--
+  Observação: por causa da política de CORS/segurança dos navegadores, esse
+  exemplo precisa ser rodado através de um servidor local (ex.: extensão
+  "Live Server" no VS Code, ou `python -m http.server`) — abrir o HTML
+  direto como arquivo (file://) costuma bloquear a requisição.
+-->
