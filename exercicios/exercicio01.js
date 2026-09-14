@@ -1,10 +1,10 @@
 // Exercício 1 – Variáveis e Tipos
 
-var nome = "Lucas";           // string
-let idade = 30;               // number
-const ativo = true;           // boolean
-let indefinido;                // undefined (não recebeu valor)
-let vazio = null;              // null (ausência de valor intencional)
+var nome = "Lucas";           
+let idade = 30;               
+const ativo = true;           
+let indefinido;                
+let vazio = null;             
 
 console.log(nome, typeof nome);
 console.log(idade, typeof idade);

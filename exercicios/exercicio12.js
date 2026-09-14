@@ -1,14 +1,11 @@
 // Exercício 12 – Métodos em Objetos
 
 const carro = {
-  modelo: "Civic",
-  ano: 2023,
+  modelo: "Civic Si",
+  ano: 2008,
   motor: "2.0",
   consumo: function (km) {
-    // consumo estimado (km/l) varia conforme o motor
-    const mediaPorMotor = {
-      "1.0": 14,
-      "1.6": 12,
+        const mediaPorMotor = {
       "2.0": 10
     };
     const media = mediaPorMotor[this.motor] || 10;

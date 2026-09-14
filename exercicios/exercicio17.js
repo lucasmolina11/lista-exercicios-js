@@ -1,7 +1,4 @@
 // Exercício 17 – Função Construtora com Prototype
-//
-// Usar `prototype` evita que o método `falar` seja recriado em memória a
-// cada nova instância — todos os objetos `Pessoa` compartilham a mesma função.
 
 function Pessoa(nome, idade) {
   this.nome = nome;

@@ -33,3 +33,7 @@ Cada exercício está em um arquivo separado dentro da pasta [`exercicios/`](./e
 
 - **Arquivos `.js`**: rode com Node.js (`node exercicios/exercicio01.js`) ou cole no console do navegador (F12).
 - **Arquivos `.html`**: abra diretamente no navegador. Os exercícios 19 e 20 usam `XMLHttpRequest` e precisam ser servidos por um servidor local (por causa de CORS) — por exemplo, com a extensão "Live Server" do VS Code ou rodando `python -m http.server` dentro da pasta `exercicios/`.
+
+## Rotinas de automação
+
+Além da lista de exercícios, o repositório também tem a pasta [`automacoes-js/`](./automacoes-js), com 10 scripts práticos de automação em Node.js (mostrar nome do usuário, hora do PC, uso de CPU/memória, backup automático de pastas, etc.). Veja o índice completo em [`automacoes-js/README-automacoes.md`](./automacoes-js/README-automacoes.md).

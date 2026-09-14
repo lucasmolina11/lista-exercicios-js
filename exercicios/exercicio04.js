@@ -10,6 +10,4 @@ function verificarIdade(idade) {
   }
 }
 
-// Em navegador, a idade poderia vir de um prompt:
-// const idade = Number(prompt("Digite sua idade:"));
 verificarIdade(70);

@@ -1,9 +1,9 @@
 // Exercício 11 – Objeto Literal
 
 const carro = {
-  modelo: "Civic",
-  ano: 2023,
-  motor: "2.0"
+  modelo: "Silvia S15",
+  ano: 1999,
+  motor: "3.0"
 };
 
 console.log(carro);

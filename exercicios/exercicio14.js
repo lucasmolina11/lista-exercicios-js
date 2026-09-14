@@ -15,5 +15,5 @@ function quadrado(n) {
 console.log("Dobro de 5:", aplicarOperacao(5, dobro));
 console.log("Quadrado de 5:", aplicarOperacao(5, quadrado));
 
-// também funciona com função anônima/arrow diretamente:
+// função anônima/arrow diretamente:
 console.log("Triplo de 5:", aplicarOperacao(5, (n) => n * 3));

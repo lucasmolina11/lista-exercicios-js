@@ -2,14 +2,14 @@
 
 let frutas = ["maçã", "banana", "uva", "morango", "abacaxi"];
 
-frutas.push("laranja");           // adiciona no final
+frutas.push("laranja");           
 console.log("Após push:", frutas);
 
-frutas.pop();                     // remove o último
+frutas.pop();                     
 console.log("Após pop:", frutas);
 
-let algumasFrutas = frutas.slice(1, 3); // extrai uma parte sem alterar o original
+let algumasFrutas = frutas.slice(1, 3); 
 console.log("Slice (1,3):", algumasFrutas);
 
-let listaFrutas = frutas.join(", "); // transforma em string
+let listaFrutas = frutas.join(", "); 
 console.log("Join:", listaFrutas);
